@@ -17,23 +17,23 @@
                 <h1 class="text-2xl font-bold sm:text-3xl">Money Master!</h1>
             </div>
             <div>
-                <input id="income-field" type="number" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0" 
+                <input id="income" type="number" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0" 
                     placeholder="Your Income" />
                 <input type="number" id="food" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0" 
                     placeholder="Expense for Food" />
-                <input type="number" id="rent" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  
+                <input id="rent" type="number"  class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  
                     placeholder="Expense for Rent" />
-                <input type="number" id="clothes" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  
+                <input id="clothes" type="number"  class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  
                     placeholder="Expense for Clothes" />
-                <button type="submit" id="calculate-button"
+                <button id="calculate-button" type="submit" 
                     class="w-full inline-block rounded-lg bg-blue-500 px-5 py-3 text-xl font-medium text-white">
                     Calculate
                 </button>
                 <div class="grid grid-cols-2 gap-5">
-                    <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Total Expenses: $
-                        <span id="expense"></span>0</p>
+                    <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Expenses: $
+                        <span id="expense"></span></p>
                     <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Balance: $
-                        <span id="balance"></span>0</p>
+                        <span id="balance"></span></p>
                 </div>
                <div class="grid grid-cols-2 gap-5">
                 <input id="save" type="number" class="w-full mb-5 rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" min="0"  placeholder="Want to Save Money??" />
@@ -42,12 +42,12 @@
                 </button>
                </div>
             <div class="grid grid-cols-2 gap-5">
-                <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Total
+                <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">
                     Saving Amount:$
                     <span id="save-amount">0</span>
                 </p>
                 <p class="w-full my-5 rounded-lg border-gray-200 p-4 pr-12 text-md shadow-sm text-white bg-slate-900">Remaining Balance:$
-                    <span id="reamining-amount">0</span>
+                    <span id="remaining-amount">0</span>
                 </p>
             </div>
             </div>
